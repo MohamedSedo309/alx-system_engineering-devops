@@ -1,0 +1,35 @@
+.:
+total 68
+drwxr-xr-x 2 root root 4096 Feb  9 14:13 .
+drwxr-xr-x 4 root root   60 Feb  8 18:14 ..
+-rwxr-xr-x 1 root root   16 Feb  8 16:46 0-current_working_directory
+-rw-r--r-- 1 root root    0 Feb  8 16:44 0-current_working_directory~
+-rwxr--r-- 1 root root   18 Feb  8 18:36 #10-back#
+-rwxr--r-- 1 root root   18 Feb  8 18:35 10-back
+-rwxr--r-- 1 root root   52 Feb  9 14:13 11-lists
+-rwxr--r-- 1 root root   31 Feb  9 13:51 12-file_type
+-rwxr--r-- 1 root root   35 Feb  9 13:49 12-file_type~
+-rwxr--r-- 1 root root   15 Feb  8 16:56 1-listit
+-rwxr--r-- 1 root root   17 Feb  8 17:09 2-bring_me_home
+-rwxr--r-- 1 root root   18 Feb  8 17:24 3-listfiles
+-rwxr--r-- 1 root root   19 Feb  8 17:30 4-listmorefiles
+-rwxr--r-- 1 root root   19 Feb  8 17:37 5-listfilesdigitonly
+-rwxr--r-- 1 root root   42 Feb  8 17:53 6-firstdirectory
+-rwxr--r-- 1 root root   52 Feb  8 18:16 7-movethatfile
+-rwxr--r-- 1 root root   46 Feb  8 18:21 8-firstdelete
+-rwxr--r-- 1 root root   44 Feb  8 18:23 9-firstdirdeletion
+-rw-r--r-- 1 root root    0 Feb  9 14:13 ls
+-rw-r--r-- 1 root root   11 Feb  8 16:51 README.md
+
+..:
+total 8
+drwxr-xr-x 4 root root   60 Feb  8 18:14 .
+drwxr-xr-x 1 root root  141 Feb  8 17:42 ..
+drwxr-xr-x 2 root root 4096 Feb  9 14:13 0x00-shell_basics
+drwxr-xr-x 8 root root  185 Feb  9 14:13 .git
+-rw-r--r-- 1 root root   11 Feb  8 16:44 README.md
+
+/boot:
+total 0
+drwxr-xr-x 2 root root   6 Apr 15  2020 .
+drwxr-xr-x 1 root root 141 Feb  8 17:42 ..
