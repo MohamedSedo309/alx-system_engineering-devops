@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'E-D-e-v-y-o-n-s-d-p-t-h' 'R-Q-r-i-l-b-a-f-q-c-g-u'
+| tr 'E-D-e-v-y-o-n-s-d-p-t-h' 'R-Q-r-i-l-b-a-f-q-c-g-u'
