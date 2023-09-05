@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+sudo apt update
+sudo apt install nginx -y
+sudo sed -i 's/# server_tokens off;/server_tokens on;/' /etc/nginx/nginx.conf
+sudo tee /etc/nginx/conf.d/custom-header.conf > /dev/null <<EOF
+server {
+    listen 80;
+
+    server_name _;
+
+    location / {
+        add_header X-Served-By \$hostname;
+    }
+}
+EOF
+sudo service nginx restart
