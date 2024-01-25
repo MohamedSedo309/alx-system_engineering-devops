@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Fixing error message >> starting Apache server
+
+sudo service apache2 start
