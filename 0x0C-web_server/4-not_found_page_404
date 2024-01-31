@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configure your Nginx server to have a custom 404 page that contains a string
 
-ADD301_REDIRECT="\\\tlocation /redirect_me {\n\t\t return 301 https://google.com;\n\t}\n"
+ADD301_REDIRECT="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n"
 ADD404_NOTFOUND="error_page 404 /custom_404.html;\n\\tlocation = /custom_404.html {\n\t\t root /usr/share/nginx/html;\n\t\tinternal;\n\t}\n"
 PATTERN="#error_page 404 /404.html;"
 
