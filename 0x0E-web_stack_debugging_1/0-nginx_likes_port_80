@@ -1,46 +1,5 @@
 #!/usr/bin/env bash
 #removing the defualt config of nginx then making symbolic link to make nginx use port 80
-# Install required packages
-sudo apt update
-sudo apt install -y net-tools procps
 
-# Check if Nginx is installed
-if ! command -v nginx &> /dev/null
-then
-    # Install Nginx if not installed
-    sudo apt install -y nginx
-fi
-
-# Check Nginx status
-sudo systemctl status nginx
-
-# Verify Nginx configuration (if installed)
-if command -v nginx &> /dev/null
-then
-    cat /etc/nginx/sites-available/default
-fi
-
-# Check listening ports
-sudo netstat -tulpn | grep LISTEN
-
-# Check Nginx logs (if installed)
-if command -v nginx &> /dev/null
-then
-    sudo cat /var/log/nginx/error.log
-fi
-
-# Update Nginx configuration (if installed and needed)
-# if command -v nginx &> /dev/null
-# then
-#     sudo nano /etc/nginx/sites-available/default
-#     # Make sure there is a line like `listen 80;` in the server block
-# fi
-
-# Restart Nginx (if installed)
-if command -v nginx &> /dev/null
-then
-    sudo systemctl restart nginx
-fi
-
-# Verify listening ports again
-sudo netstat -tulpn | grep LISTEN
+sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+sudo service nginx restart
