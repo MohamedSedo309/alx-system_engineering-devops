@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #removing the defualt config of nginx then making symbolic link to make nginx use port 80
-rm etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
+apt-get update
+apt-get -y install curl
+rm /etc/nginx/sites-available/*
+rm /etc/nginx/sites-enabled/*~
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
