@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # removing the defualt config of nginx then making
 # symbolic link to make nginx use port 80
-
 sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
